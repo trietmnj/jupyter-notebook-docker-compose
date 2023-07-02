@@ -10,6 +10,7 @@ services:
           - .:/home/jovyan/jupyter-notebook-docker-compose
           - ./notebooks/:/home/jovyan/notebooks
           - /mnt/f/phd-data/:/home/jovyan/data
+          - /mnt/c/Users/MyPC/OneDrive/phd-data/:/home/jovyan/data-laptop
       ports:
         - 10001:8888
       container_name:   jupyter_notebook
